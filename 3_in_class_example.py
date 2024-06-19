@@ -10,6 +10,9 @@ class User():
         self.friends = []
         self.posts = {}
 
+    def change_pword(self, new_pword):
+        self.password = new_pword
+
     # user contact method
     def get_info(self):
         print(f"{self.username} can be contacted at {self.email}")
@@ -81,3 +84,9 @@ travis.friends_list()
 cole.create_post()
 cole.create_post()
 print(cole.posts)
+
+list1 = []
+print(type(list1))
+
+list1 = {}
+print(type(list1))
